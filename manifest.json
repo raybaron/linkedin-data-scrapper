@@ -1,0 +1,21 @@
+{
+   "name" : "LinkedIn Profile Data Scrapper",
+   "manifest_version":3,
+   "description" : "scrape data from linked in profiles",
+   "version":"0.0.1",
+   "action":{
+      "default_popup":"popout.html",
+      "default_icon": "logo.png"
+   },
+   "icons":{
+      "128":"logo.png"
+   },
+   "content_scripts": [ {
+      "js": [ "script.js" ],
+     
+      "matches": [ "<all_urls>" ]
+         }],
+
+   "permissions" :["activeTab"]
+
+}
